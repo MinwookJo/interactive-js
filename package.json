@@ -1,0 +1,36 @@
+{
+  "name": "interactive-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./build && webpack -w --mode production --config webpack.config.js",
+    "server": "node ./src/server/server.js",
+    "start": "npm run build && node ./src/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinwookJo/interactive-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/MinwookJo/interactive-js/issues"
+  },
+  "homepage": "https://github.com/MinwookJo/interactive-js#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
